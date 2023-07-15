@@ -112,22 +112,22 @@ export const content = {
 
   },
   services: {
-    title: "Services",
-    subtitle: "WHAT I OFFER",
+    title: "Hobbies",
+    subtitle: "AND INTERESTS",
     service_content: [
       {
         title: "Woodworking",
-        para: "I have a big interest in hands on work and creating things for people, giving me insight on UX and UI as I have to conform to the standards of my customer!",
+        para: "I have a big interest in hands on work and creating things for people, giving me insight on UX and UI as I have to conform to the standards of my customer.",
         logo: services_logo1,
       },
       {
-        title: "UI / UX DESIGNING",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        title: "AI Evolution",
+        para: "In order to keep up with the ever evolving software world, and indulge in my nerdy interests, I keep up with the growth of AI in the new Modern World",
         logo: services_logo2,
       },
       {
-        title: "PhotoShop Editing",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        title: "Exercise",
+        para: "I have dedicated myself to the gym for the past 6 years, and I believe no matter what consistency and persistance yields result!",
         logo: services_logo3,
       },
     ],
