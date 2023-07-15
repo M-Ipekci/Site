@@ -17,11 +17,6 @@ import project2 from "./assets/images/projects/img2.png";
 import project3 from "./assets/images/projects/img3.png";
 import person_project from "./assets/images/projects/person.png";
 
-import avatar1 from "./assets/images/Testimonials/avatar1.png";
-import avatar2 from "./assets/images/Testimonials/avatar2.png";
-import avatar3 from "./assets/images/Testimonials/avatar3.png";
-import avatar4 from "./assets/images/Testimonials/avatar4.png";
-
 import Hireme_person from "./assets/images/Hireme/person.png";
 import Hireme_person2 from "./assets/images/Hireme/person2.png";
 
@@ -151,38 +146,7 @@ export const content = {
       },
     ],
   },
-  /*
-  Testimonials: {
-    title: "Hobbies",
-    subtitle: "AND RELEVANCE",
-    testimonials_content: [
-      {
-        name: "Woodworking",
-        review:
-          "I have a big interest in hands on work and creating things for people, giving me insight on UX and UI as I have to conform to the standards of my customer!",
-        img: avatar1,
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar2,
-        name: "Tom Alex",
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar3,
-        name: "Johnny",
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar4,
-        name: "ROBBIN",
-      },
-    ],
-  },
-  */
+
   Hireme: {
     title: "Hire Me",
     subtitle: "FOR YOUR PROJECTS",
