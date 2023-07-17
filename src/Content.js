@@ -8,9 +8,9 @@ import reactjs from "./assets/images/Skills/react.png";
 import nodejs from "./assets/images/Skills/node.png";
 import python from "./assets/images/Skills/python.png";
 
-import services_logo1 from "./assets/images/Services/logo1.png";
-import services_logo2 from "./assets/images/Services/logo2.png";
-import services_logo3 from "./assets/images/Services/logo3.png";
+import WoodworkingLogo from '../Assets/Services/woodworking-logo.svg';
+import AIEvolutionLogo from '../assets/Services/ai-evolution-logo.svg';
+import ExerciseLogo from '../Assets/Services/exercise-logo.svg';
 
 import project1 from "./assets/images/projects/img1.png";
 import project2 from "./assets/images/projects/img2.png";
@@ -112,18 +112,18 @@ export const content = {
     service_content: [
       {
         title: "Woodworking",
-        para: "I have a big interest in hands on work and creating things for people, giving me insight on UX and UI as I have to conform to the standards of my customer.",
-        logo: services_logo1,
+        para: "I have a big interest in hands-on work and creating things for people, giving me insight into UX and UI as I have to conform to the standards of my customer.",
+        logo: WoodworkingLogo,
       },
       {
         title: "AI Evolution",
-        para: "In order to keep up with the ever evolving software world, and indulge in my nerdy interests, I keep up with the growth of AI in the new Modern World",
-        logo: services_logo2,
+        para: "In order to keep up with the ever-evolving software world, and indulge in my nerdy interests, I keep up with the growth of AI in the new Modern World",
+        logo: AIEvolutionLogo,
       },
       {
         title: "Exercise",
-        para: "I have dedicated myself to the gym for the past 6 years, and I believe no matter what consistency and persistance yields result!",
-        logo: services_logo3,
+        para: "I have dedicated myself to the gym for the past 6 years, and I believe no matter what consistency and persistence yield results!",
+        logo: ExerciseLogo,
       },
     ],
   },
