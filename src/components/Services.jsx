@@ -1,8 +1,8 @@
 import React from 'react';
 import { content } from '../Content';
-import WoodworkingLogo from '../Assets/Services/woodworking-logo.svg';
-import AIEvolutionLogo from '../assets/Services/ai-evolution-logo.svg';
-import ExerciseLogo from '../Assets/Services/exercise-logo.svg';
+import WoodworkingLogo from '../assets/images/Services/woodworking-logo.svg';
+import AIEvolutionLogo from '../assets/images/Services/ai-evolution-logo.svg';
+import ExerciseLogo from '../assets/images/Services/exercise-logo.svg';
 
 const Services = () => {
   const { services } = content;

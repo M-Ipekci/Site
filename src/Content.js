@@ -8,9 +8,9 @@ import reactjs from "./assets/images/Skills/react.png";
 import nodejs from "./assets/images/Skills/node.png";
 import python from "./assets/images/Skills/python.png";
 
-import WoodworkingLogo from '../Assets/Services/woodworking-logo.svg';
-import AIEvolutionLogo from '../assets/Services/ai-evolution-logo.svg';
-import ExerciseLogo from '../Assets/Services/exercise-logo.svg';
+import WoodworkingLogo from '../assets/images/Services/woodworking-logo.svg';
+import AIEvolutionLogo from '../assets/images/Services/ai-evolution-logo.svg';
+import ExerciseLogo from '../assets/images/Services/exercise-logo.svg';
 
 import project1 from "./assets/images/projects/img1.png";
 import project2 from "./assets/images/projects/img2.png";
