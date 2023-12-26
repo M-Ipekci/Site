@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { content } from "../Content";
-import Spline from '@splinetool/react-spline';
+import Keyboard from "./Keyboard"; // Assuming the relative path to Keyboard.jsx
 
 const Hero = () => {
   const { hero } = content;
@@ -60,7 +60,7 @@ const Hero = () => {
               zIndex: 1000,
             }}
           >
-            <Spline scene="https://prod.spline.design/HKlfAoUoTv3w35yQ/scene.splinecode" />
+            <Keyboard />
           </div>
         )}
       </div>
