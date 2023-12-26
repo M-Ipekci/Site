@@ -1,23 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { content } from "../Content";
-import Spline from '@splinetool/react-spline'; // Make sure to install this package
 
 const Hero = () => {
   const { hero } = content;
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
-    // Trigger the effect directly without waiting for scroll
     setShowContent(true);
-
-    // Cleanup: remove the scroll event listener
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const handleScroll = () => {
-    // This function is now a no-op as we've triggered the effect directly
   };
 
   return (
@@ -59,8 +54,6 @@ const Hero = () => {
               zIndex: 1000,
             }}
           >
-            {/* Include your Spline 3D model component here */}
-            <Spline scene="https://prod.spline.design/HKlfAoUoTv3w35yQ/scene.splinecode" />
           </div>
         )}
       </div>
