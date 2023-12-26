@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import { content } from "../Content";
 
 const Hero = () => {
-  const { hero } = content;
   const [showContent, setShowContent] = useState(false);
   const viewerRef = useRef(null);
 
@@ -10,29 +8,28 @@ const Hero = () => {
     const handleScroll = () => {
       const threshold = window.innerHeight / 2;
       const isScrolled = window.scrollY > threshold;
-      // Always set showContent to true if scrolled down
       setShowContent((prev) => (isScrolled ? true : prev));
     };
 
     window.addEventListener("scroll", handleScroll);
 
-    // Load Spline viewer script dynamically
     const script = document.createElement("script");
     script.type = "module";
     script.src = "https://unpkg.com/@splinetool/viewer@1.0.16/build/spline-viewer.js";
     script.async = true;
     script.onload = () => {
-      // Initialize the viewer when the script is loaded
       const viewer = document.createElement("spline-viewer");
       viewer.setAttribute("url", "https://prod.spline.design/HKlfAoUoTv3w35yQ/scene.splinecode");
       viewerRef.current.appendChild(viewer);
+    };
+    script.onerror = () => {
+      console.error("Error loading Spline viewer script");
     };
 
     document.body.appendChild(script);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      // Cleanup: remove the script from the document
       document.body.removeChild(script);
     };
   }, []);
@@ -54,9 +51,7 @@ const Hero = () => {
             {hero.hero_content.map((content, i) => (
               <div
                 key={i}
-                className={`flex items-center w-80
-                  ${i === 1 && " flex-row-reverse text-right flex-col-reverse-mobile"}
-                `}
+                className={`flex items-center w-80 ${i === 1 && " flex-row-reverse text-right flex-col-reverse-mobile"}`}
                 style={{ transitionDelay: `${i * 300}ms` }}
               >
                 <h3>{content.count}</h3>
