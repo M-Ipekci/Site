@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { content } from "../Content";
-import Spline from '@splinetool/react-spline'; // Make sure to install this package
+import { Application } from '@splinetool/runtime';
 
 const Hero = () => {
   const { hero } = content;
   const [showContent, setShowContent] = useState(false);
+  const canvasRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,6 +16,12 @@ const Hero = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
+
+    // Initialize Spline application on component mount
+    const canvas = canvasRef.current;
+    const app = new Application(canvas);
+    app.load('https://prod.spline.design/HKlfAoUoTv3w35yQ/scene.splinecode');
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -59,8 +66,8 @@ const Hero = () => {
               zIndex: 1000,
             }}
           >
-            {/* Include your Spline 3D model component here */}
-            <Spline scene="https://prod.spline.design/HKlfAoUoTv3w35yQ/scene.splinecode" />
+            {/* Include the canvas element for the Spline 3D model */}
+            <canvas ref={canvasRef} id="canvas3d" />
           </div>
         )}
       </div>
