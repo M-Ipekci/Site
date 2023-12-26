@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { content } from "../Content";
-import { Application } from '@splinetool/runtime';
 
 const Hero = () => {
   const { hero } = content;
   const [showContent, setShowContent] = useState(false);
-  const canvasRef = useRef(null);
+  const viewerRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,13 +16,24 @@ const Hero = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Initialize Spline application on component mount
-    const canvas = canvasRef.current;
-    const app = new Application(canvas);
-    app.load('https://prod.spline.design/HKlfAoUoTv3w35yQ/scene.splinecode');
+    // Load Spline viewer script dynamically
+    const script = document.createElement("script");
+    script.type = "module";
+    script.src = "https://unpkg.com/@splinetool/viewer@1.0.16/build/spline-viewer.js";
+    script.async = true;
+    script.onload = () => {
+      // Initialize the viewer when the script is loaded
+      const viewer = document.createElement("spline-viewer");
+      viewer.setAttribute("url", "https://prod.spline.design/HKlfAoUoTv3w35yQ/scene.splinecode");
+      viewerRef.current.appendChild(viewer);
+    };
+
+    document.body.appendChild(script);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      // Cleanup: remove the script from the document
+      document.body.removeChild(script);
     };
   }, []);
 
@@ -58,6 +68,7 @@ const Hero = () => {
 
         {showContent && (
           <div
+            ref={viewerRef}
             style={{
               position: 'absolute',
               top: '50%',
@@ -65,10 +76,7 @@ const Hero = () => {
               transform: 'translate(-50%, -50%)',
               zIndex: 1000,
             }}
-          >
-            {/* Include the canvas element for the Spline 3D model */}
-            <canvas ref={canvasRef} id="canvas3d" />
-          </div>
+          />
         )}
       </div>
     </section>
