@@ -7,7 +7,7 @@ export default {
       external: [
         'react',
         'react-dom',
-        'react-three-fiber',
+        'three', // Add 'three' to the list of external modules
         '@react-three/drei',
       ],
     },
