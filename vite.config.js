@@ -7,7 +7,8 @@ export default {
       external: [
         'react',
         'react-dom',
-        'react-three-fiber', // Add react-three-fiber to the external dependencies
+        'react-three-fiber',
+        '@react-three/drei',
       ],
     },
   },
