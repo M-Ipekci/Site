@@ -56,87 +56,305 @@ export default function Keyboard() {
             rotation={[-1.57, 0, 0]}
           />
 
-          {/* Ipekci Keys */}
           <group name="Ipekci Keys" position={[10, 190, 200]}>
-            {/* Key ! */}
             <group name="Key !" position={[1200, -900, 0]}>
-              {/* ... (Components for Key !) */}
+                <mesh
+                    name="Text"
+                    geometry={nodes.Text.geometry}
+                    material={materials['Text Material']}
+                    castShadow
+                    receiveShadow
+                    position={[-44.37, 140.25, -59.95]}
+                    rotation={[-Math.PI / 2, 0, 0]}
+                />
+                <mesh
+                    name="Cube"
+                    geometry={nodes.Cube.geometry}
+                    material={materials.Key}
+                    castShadow
+                    receiveShadow
+                    position={[0, 168.25, 0]}
+                    scale={1}
+                />
             </group>
 
-            {/* Key E */}
             <group name="Key E" position={[-400.5, -900, 0]}>
-              {/* ... (Components for Key E) */}
+                <mesh
+                    name="Text1"
+                    geometry={nodes.Text1.geometry}
+                    material={materials['Text1 Material']}
+                    castShadow
+                    receiveShadow
+                    position={[-44.37, 140.25, -59.95]}
+                    rotation={[-Math.PI / 2, 0, 0]}
+                />
+                <mesh
+                    name="Cube1"
+                    geometry={nodes.Cube1.geometry}
+                    material={materials.Key}
+                    castShadow
+                    receiveShadow
+                    position={[0, 168.25, 0]}
+                    scale={1}
+                />
             </group>
 
-            {/* Key P */}
             <group name="Key P" position={[-800.5, -900, 0]}>
-              {/* ... (Components for Key P) */}
+                <mesh
+                    name="Text6"
+                    geometry={nodes.Text6.geometry}
+                    material={materials['Text6 Material']}
+                    castShadow
+                    receiveShadow
+                    position={[-44.37, 140.25, -59.95]}
+                    rotation={[-Math.PI / 2, 0, 0]}
+                />
+                <mesh
+                    name="Cube6"
+                    geometry={nodes.Cube6.geometry}
+                    material={materials.Key}
+                    castShadow
+                    receiveShadow
+                    position={[0, 168.25, 0]}
+                    scale={1}
+                />
             </group>
 
-            {/* Key C */}
             <group name="Key C" position={[400, -900, 0]}>
-              {/* ... (Components for Key C) */}
+                <mesh
+                    name="Text3"
+                    geometry={nodes.Text3.geometry}
+                    material={materials['Text3 Material']}
+                    castShadow
+                    receiveShadow
+                    position={[-44.37, 140.25, -59.95]}
+                    rotation={[-Math.PI / 2, 0, 0]}
+                />
+                <mesh
+                    name="Cube3"
+                    geometry={nodes.Cube3.geometry}
+                    material={materials.Key}
+                    castShadow
+                    receiveShadow
+                    position={[0, 168.25, 0]}
+                    scale={1}
+                />
             </group>
 
-            {/* Key I */}
             <group name="Key I" position={[-1200, -900, 0]}>
-              {/* ... (Components for Key I) */}
+                <mesh
+                    name="Text3"
+                    geometry={nodes.Text3.geometry}
+                    material={materials['Text3 Material']}
+                    castShadow
+                    receiveShadow
+                    position={[-44.37, 140.25, -59.95]}
+                    rotation={[-Math.PI / 2, 0, 0]}
+                />
+                <mesh
+                    name="Cube3"
+                    geometry={nodes.Cube3.geometry}
+                    material={materials.Key}
+                    castShadow
+                    receiveShadow
+                    position={[0, 168.25, 0]}
+                    scale={1}
+                />
             </group>
 
-            {/* Key K */}
             <group name="Key K" position={[0, -900, 0]}>
-              {/* ... (Components for Key K) */}
+                <mesh
+                    name="Text4"
+                    geometry={nodes.Text4.geometry}
+                    material={materials['Text4 Material']}
+                    castShadow
+                    receiveShadow
+                    position={[-44.37, 140.25, -59.95]}
+                    rotation={[-Math.PI / 2, 0, 0]}
+                />
+                <mesh
+                    name="Cube4"
+                    geometry={nodes.Cube4.geometry}
+                    material={materials.Key}
+                    castShadow
+                    receiveShadow
+                    position={[0, 168.25, 0]}
+                    scale={1}
+                />
             </group>
 
-            {/* Key I 2 */}
             <group name="Key I 2" position={[800, -900, 0]}>
-              {/* ... (Components for Key I 2) */}
+                <mesh
+                    name="Text2"
+                    geometry={nodes.Text2.geometry}
+                    material={materials['Text2 Material']}
+                    castShadow
+                    receiveShadow
+                    position={[-44.37, 140.25, -59.95]}
+                    rotation={[-Math.PI / 2, 0, 0]}
+                />
+                <mesh
+                    name="Cube2"
+                    geometry={nodes.Cube2.geometry}
+                    material={materials.Key}
+                    castShadow
+                    receiveShadow
+                    position={[0, 168.25, 0]}
+                    scale={1}
+                />
             </group>
-
-            {/* Add other keys here */}
           </group>
 
-          {/* Mustafa Keys */}
           <group name="Mustafa Keys" position={[10, 184.9, -200]}>
-            {/* Key A 2 */}
             <group name="Key A 2" position={[1200, -900, 0]}>
-              {/* ... (Components for Key A 2) */}
+                <mesh
+                    name="Text7"
+                    geometry={nodes.Text7.geometry}
+                    material={materials['Text7 Material']}
+                    castShadow
+                    receiveShadow
+                    position={[-44.37, 140.25, -59.95]}
+                    rotation={[-Math.PI / 2, 0, 0]}
+                />
+                <mesh
+                    name="Cube7"
+                    geometry={nodes.Cube7.geometry}
+                    material={materials.Key}
+                    castShadow
+                    receiveShadow
+                    position={[0, 168.25, 0]}
+                    scale={1}
+                />
             </group>
 
-            {/* Key S */}
+
             <group name="Key S" position={[-400.5, -900, 0]}>
-              {/* ... (Components for Key S) */}
+                <mesh
+                    name="Text8"
+                    geometry={nodes.Text8.geometry}
+                    material={materials['Text8 Material']}
+                    castShadow
+                    receiveShadow
+                    position={[-44.37, 140.25, -59.95]}
+                    rotation={[-Math.PI / 2, 0, 0]}
+                />
+                <mesh
+                    name="Cube8"
+                    geometry={nodes.Cube8.geometry}
+                    material={materials.Key}
+                    castShadow
+                    receiveShadow
+                    position={[0, 168.25, 0]}
+                    scale={1}
+                />
             </group>
 
-            {/* Key F */}
             <group name="Key F" position={[800, -900, 0]}>
-              {/* ... (Components for Key F) */}
+                <mesh
+                    name="Text9"
+                    geometry={nodes.Text9.geometry}
+                    material={materials['Text9 Material']}
+                    castShadow
+                    receiveShadow
+                    position={[-44.37, 140.25, -59.95]}
+                    rotation={[-Math.PI / 2, 0, 0]}
+                />
+                <mesh
+                    name="Cube9"
+                    geometry={nodes.Cube9.geometry}
+                    material={materials.Key}
+                    castShadow
+                    receiveShadow
+                    position={[0, 168.25, 0]}
+                    scale={1}
+                />
             </group>
 
-            {/* Key A */}
             <group name="Key A" position={[400, -900, 0]}>
-              {/* ... (Components for Key A) */}
+                <mesh
+                    name="Text10"
+                    geometry={nodes.Text10.geometry}
+                    material={materials['Text10 Material']}
+                    castShadow
+                    receiveShadow
+                    position={[-44.37, 140.25, -59.95]}
+                    rotation={[-Math.PI / 2, 0, 0]}
+                />
+                <mesh
+                    name="Cube10"
+                    geometry={nodes.Cube10.geometry}
+                    material={materials.Key}
+                    castShadow
+                    receiveShadow
+                    position={[0, 168.25, 0]}
+                    scale={1}
+                />
             </group>
 
-            {/* Key T */}
             <group name="Key T" position={[0, -900, 0]}>
-              {/* ... (Components for Key T) */}
+                <mesh
+                    name="Text11"
+                    geometry={nodes.Text11.geometry}
+                    material={materials['Text11 Material']}
+                    castShadow
+                    receiveShadow
+                    position={[-44.37, 140.25, -59.95]}
+                    rotation={[-Math.PI / 2, 0, 0]}
+                />
+                <mesh
+                    name="Cube11"
+                    geometry={nodes.Cube11.geometry}
+                    material={materials.Key}
+                    castShadow
+                    receiveShadow
+                    position={[0, 168.25, 0]}
+                    scale={1}
+                />
             </group>
 
-            {/* Key M */}
             <group name="Key M" position={[-1200.5, -900, 0]}>
-              {/* ... (Components for Key M) */}
+                <mesh
+                    name="Text12"
+                    geometry={nodes.Text12.geometry}
+                    material={materials.Key}
+                    castShadow
+                    receiveShadow
+                    position={[-44.37, 140.25, -59.95]}
+                    rotation={[-Math.PI / 2, 0, 0]}
+                />
+                <mesh
+                    name="Cube12"
+                    geometry={nodes.Cube12.geometry}
+                    material={materials['Key Steelblue']}
+                    castShadow
+                    receiveShadow
+                    position={[1.01, 169.26, 0]}
+                    scale={1}
+                />
             </group>
 
-            {/* Key U */}
             <group name="Key U" position={[-800.5, -900, 0]}>
-              {/* ... (Components for Key U) */}
+                <mesh
+                    name="Text13"
+                    geometry={nodes.Text13.geometry}
+                    material={materials['Text13 Material']}
+                    castShadow
+                    receiveShadow
+                    position={[-44.37, 140.25, -59.95]}
+                    rotation={[-Math.PI / 2, 0, 0]}
+                />
+                <mesh
+                    name="Cube13"
+                    geometry={nodes.Cube13.geometry}
+                    material={materials.Key}
+                    castShadow
+                    receiveShadow
+                    position={[0, 168.25, 0]}
+                    scale={1}
+                />
             </group>
-
-            {/* Add other keys here */}
           </group>
 
-          {/* Rectangle 2 */}
           <mesh
             name="Rectangle 2"
             geometry={nodes['Rectangle 2'].geometry}
@@ -147,7 +365,6 @@ export default function Keyboard() {
             rotation={[-Math.PI / 2, 0, 0]}
           />
 
-          {/* Rectangle */}
           <mesh
             name="Rectangle"
             geometry={nodes.Rectangle.geometry}
@@ -158,7 +375,6 @@ export default function Keyboard() {
             rotation={[-Math.PI / 2, 0, 0]}
           />
 
-          {/* Orthographic Camera */}
           <OrthographicCamera
             name="1"
             makeDefault={false}
@@ -166,7 +382,6 @@ export default function Keyboard() {
             near={-50000}
           />
 
-          {/* Directional Light */}
           <directionalLight
             name="Directional Light"
             castShadow
@@ -182,22 +397,19 @@ export default function Keyboard() {
             position={[-270.54, 436.35, 167.48]}
           />
 
-          {/* Ambient Light */}
           <ambientLight name="Ambient Light" color={0x404040} intensity={0.3} />
 
-          {/* RectAreaLight */}
           <rectAreaLight
             name="Light"
             width={2000}
             height={2000}
             color={0xffffff}
             intensity={2.5}
-            position={[-800, 1500, 800]} // Adjusted position for the light
+            position={[-800, 1500, 800]}
             lookAt={[0, 0, 0]}
             penumbra={1}
           />
 
-          {/* ... (Other lights and elements as needed) */}
         </scene>
       </group>
     </>
