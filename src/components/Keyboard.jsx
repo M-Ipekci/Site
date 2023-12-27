@@ -409,7 +409,6 @@ export default function Keyboard() {
             lookAt={[0, 0, 0]}
             penumbra={1}
           />
-
         </scene>
       </group>
     </>
