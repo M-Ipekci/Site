@@ -1,6 +1,9 @@
 import React, { useRef } from 'react';
 import { useFrame } from 'react-three-fiber';
-import { OrthographicCamera } from '@react-three/drei';
+import { OrthographicCamera } from 'react-three-fiber';
+import { RectAreaLight } from 'three';
+import { useHelper } from 'drei/helpers/useHelper';
+
 
 export default function Keyboard() {
   const keyboardGroup = useRef();
