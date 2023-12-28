@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { content } from "../Content";
-import Keyboard from "./Keyboard"; // Assuming the relative path to Keyboard.jsx
+import Spline from '@splinetool/react-spline';
+// import Keyboard from "./components/Keyboard.jsx";
 
 const Hero = () => {
   const { hero } = content;
@@ -13,7 +14,7 @@ const Hero = () => {
       setShowContent((prev) => (isScrolled ? true : prev));
     };
 
-    handleScroll(); // Initial check
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -32,6 +33,14 @@ const Hero = () => {
           <h2 className="rotate-90 absolute top-[30%] right-[15%]" style={{ fontSize: '3rem' }}>{hero.title}</h2>
         </div>
 
+        {showContent && (
+          <>
+            <Spline scene="https://prod.spline.design/HKlfAoUoTv3w35yQ/scene.splinecode" />
+
+            {/* <Keyboard /> */}
+          </>
+        )}
+
         <div className={`pb-16 px-6 pt-12 z-10 text-center-mobile ${showContent ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
           <br />
           <div className="flex flex-col gap-10 mt-10">
@@ -49,20 +58,6 @@ const Hero = () => {
             ))}
           </div>
         </div>
-
-        {showContent && (
-          <div
-            style={{
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              zIndex: 1000,
-            }}
-          >
-            <Keyboard />
-          </div>
-        )}
       </div>
     </section>
   );

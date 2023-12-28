@@ -1,3 +1,4 @@
+/*
 import React, { useRef } from 'react';
 import { useFrame } from 'react-three-fiber';
 import { OrthographicCamera } from 'react-three-fiber';
@@ -417,3 +418,5 @@ export default function Keyboard() {
     </>
   );
 }
+
+*/
